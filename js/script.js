@@ -11,6 +11,8 @@ function createProduct(parent, imgUrl, productTitle, textPrice, idProduct) {
   createText(product, productTitle, textPrice);
   parent.appendChild(product);
 
+  const modal = document.querySelector(".modal")
+
   product.addEventListener("click", (e) => {
     cartList.push(
       productsList.find(
@@ -18,7 +20,15 @@ function createProduct(parent, imgUrl, productTitle, textPrice, idProduct) {
       )
     );
     setCartProductsNum();
-    alert(`Prodotto aggiunto al carrello, numero prodotti: ${cartList.length}`);
+
+    modal.style.display =  "flex"
+
+    setTimeout(() => {
+      modal.style.display =  "none"
+    }, 2000)
+
+
+    // alert(`Prodotto aggiunto al carrello, numero prodotti: ${cartList.length}`);
     // Nel caso in cui volessimo aggiungere una interazione col LocalStorage
     localStorage.setItem("totCartitems", cartList.length);
   });

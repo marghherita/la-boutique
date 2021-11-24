@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;700&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;500;600;700&family=Press+Start+2P&display=swap");
 :root {
   --main_color: #353535;
 }
@@ -146,3 +146,42 @@ strong {
 .product p {
   align-self: flex-end;
 }
+
+
+.modal {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  top: 50%;
+  left: 35%;
+
+  position: fixed;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  border: 5px solid #000;
+
+  background: #fff;
+  color: #000;
+
+  transition: 2s ease;
+}
+
+.modal p {
+  text-align: center;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.modal img {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+
