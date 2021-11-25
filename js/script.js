@@ -125,3 +125,87 @@ clearCartBtn.addEventListener("click", () => {
   cartList.length = 0;
   setCartProductsNum();
 });
+
+
+// Sezione recensioni
+
+// ----------- METODO FUNZIONE RENDER DINAMICA
+
+// const reviews = [
+//   {
+//     id: 1,
+//     review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum, erat sed euismod ultrices, enim neque rutrum enim, nec condimentum.",
+//     name: "Maggggherita Grasso",
+//   },
+//   {
+//     id: 2,
+//     review: "Quisque id ligula venenatis, pulvinar urna non, efficitur odio. Sed eu hendrerit libero. In id sollicitudin lacus. Quisque leo nunc.",
+//     name: "Zuliae Notaro",
+//   },
+//   {
+//     id: 3,
+//     review: "Aliquam vel eleifend nulla. Maecenas ultrices, velit at sollicitudin dictum, quam ligula pulvinar metus, non congue nunc tellus non nunc.",
+//     name: "Reburtu Tirrito",
+//   },
+// ];
+
+// const wrapperReview = document.querySelector(".wrapper_reviews")
+
+// function createReview (parent, textReview, textNames) {
+//   const review = document.createElement("div");
+//   review.className = "review";
+
+//   createText(review, textReview, textNames);
+//   parent.appendChild(review);
+// }
+
+
+// function createTextReview (parent, textReview, textNames) {
+//   const textRev = document.createElement("p");
+//   textRev.textContent = textReview;
+  
+//   const textName = document.createElement("p");
+//   textName.textContent = textNames;
+
+//   parent.append(textRev, textName)
+// };
+
+// function renderReviews(listReview) {
+//   listReview.map((reviews) => {
+//     createReview(wrapperReview, reviews.review, reviews.name)
+//   });
+// }
+
+// renderReviews(reviews);
+
+
+// ----------- METODO INNERTEXT
+
+const reviews = [
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum, erat sed euismod ultrices, enim neque rutrum enim, nec condimentum.",
+  "Aliquam vel eleifend nulla. Maecenas ultrices, velit at sollicitudin dictum, quam ligula pulvinar metus, non congue nunc tellus non nunc.",
+  "Quisque id ligula venenatis, pulvinar urna non, efficitur odio. Sed eu hendrerit libero. In id sollicitudin lacus. Quisque leo nunc.",
+];
+
+const reviewElement = document.querySelector('#par-rev')
+
+let revIndex = 0;
+
+let changeReview = setInterval( () => {
+
+  reviewElement.innerText = `${reviews[revIndex]}`;
+
+  if (revIndex < reviews.length - 1 ) {
+    revIndex++
+  } else {
+    revIndex = 0;
+  }
+
+}, 3000)
+
+
+
+
+
+
+
