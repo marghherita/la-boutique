@@ -117,11 +117,7 @@ const clearCartBtn = document.querySelector(".clearCart");
 
 // Flusso generale
 
-if (localStorageTot === null ) {
-  localStorageTot = 0
-};
-
-cartProductsNum.textContent = `Numero prodotti: ${localStorageTot}`;
+cartProductsNum.textContent = `Numero prodotti: ${localStorageTot || 0}`;
 getProductsList();
 
 
