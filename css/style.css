@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Mohave", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   border: 0;
 }
@@ -185,3 +185,46 @@ strong {
   margin: 20px;
 }
 
+
+
+.wrapper_reviews .review {
+  display: flex;
+  display: block;
+  flex-direction: column;
+  border: 5px solid #000;
+  width: 300px;
+  height: 300px;
+  
+  background: #fff;
+  color: #000;
+  margin: 0 auto;
+  padding: 20px;
+  
+  text-align: center;
+  justify-content: center;
+  
+  width: 300px;
+  height: auto;
+}
+
+.review img {
+  display: block;
+  margin: 0 auto;
+}
+
+.review p {
+  margin: 20px;
+}
+
+.review-section {
+  border: 2px solid #000;
+  text-align: center;
+  margin: 30px;
+
+}
+
+.wrapper_reviews {
+  margin: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
