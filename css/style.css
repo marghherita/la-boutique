@@ -73,14 +73,19 @@ strong {
 .cartBanner {
   display: flex;
   justify-content: flex-end;
-  background-image: linear-gradient(135deg, #f6416c 10%, #fff6b7 100%);
+  border: 3px solid #000;
+  text-align: center;
+  margin: 30px;
 }
 
 .cartBanner .cartProductsNum {
   margin-right: 20px;
+  padding-bottom: 10px;
+  
 }
 
 .cartBanner .clearCart {
+  margin: 0 10px;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -91,9 +96,13 @@ strong {
   transform: scale(1.6);
 }
 
+
 .cartBanner .cartProductsNum::before {
-  content: "🛒";
-  margin-right: 10px;
+  content: url(https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/30/000000/external-shopping-cart-interface-kiranshastry-lineal-kiranshastry-1.png);
+  width: 15px;
+  height: 15px;
+  margin: 0 20px;
+  
   font-size: 1.5rem;
 }
 
@@ -126,16 +135,16 @@ strong {
 
   width: 150px;
 
-  border: 2px solid rgb(50, 50, 50);
+  border: 2px solid #000;
 
-  opacity: 0.78;
+  /* opacity: 0.78; */
   cursor: pointer;
   transition: all 0.35s;
 }
 
 .product:hover {
   transform: scale(0.9);
-  border: 2px solid var(--main_color);
+  border: 4px solid #000;
 }
 
 .product:active {
@@ -187,25 +196,23 @@ strong {
 
 
 
-.wrapper_reviews .review {
+.review {
   display: flex;
   display: block;
   flex-direction: column;
-  border: 5px solid #000;
-  width: 300px;
+  border: 3px solid #000;
+  width: 650px;
   height: 300px;
   
   background: #fff;
   color: #000;
-  margin: 0 auto;
+  margin: 50px auto;
   padding: 20px;
   
   text-align: center;
   justify-content: center;
-  
-  width: 300px;
-  height: auto;
 }
+
 
 .review img {
   display: block;
@@ -217,7 +224,7 @@ strong {
 }
 
 .review-section {
-  border: 2px solid #000;
+  border: 4px solid #000;
   text-align: center;
   margin: 30px;
 

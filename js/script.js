@@ -98,11 +98,7 @@ let changeImg = setInterval( () => {
 
   change.style.backgroundImage = `url(${imgs[imagesIndex]})`;
 
-  if (imagesIndex < imgs.length - 1) {
-    imagesIndex++
-  } else {
-    imagesIndex = 0;
-  }
+  imagesIndex < imgs.length - 1 ? imagesIndex++ : imagesIndex = 0;
 
 }, 3000)
 
@@ -195,11 +191,7 @@ let changeReview = setInterval( () => {
 
   reviewElement.innerText = `${reviews[revIndex]}`;
 
-  if (revIndex < reviews.length - 1 ) {
-    revIndex++
-  } else {
-    revIndex = 0;
-  }
+  revIndex < reviews.length - 1 ? revIndex++ : revIndex = 0;
 
 }, 3000)
 
